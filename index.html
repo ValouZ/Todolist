@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+</head>
+<body>
+    <header>
+        <h1>GoldnList</h1>
+    </header>
+    <main>
+        <div class="new-item">
+            <div class="item-creation">
+                <div class="task-input">
+                    <input type="text" class="add-item" id="add-item">
+                    <label for="add-item" class="label-content">My tasks</label>
+                </div>
+    
+                <div class="category-group">
+                    <h2>Add a category</h2>
+                    <div class="categorys">
+                        <select name="category" class="choose-category">
+                            <option class="professional" value="professional">Professional</option>
+                            <option class="personal" value="personal">Personal</option>
+                            <option class="other" value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <button class="confirm-item" id="confirm-item">
+                <i class="fas fa-plus"></i>
+            </button>
+        </div>
+
+        <div class="sort">
+            <h2>Sort Tasks</h2>
+            <div class="filter">
+                <select name="items" class="filter-items">
+                    <option value="all">All</option>
+                    <option value="inprogress">In progress</option>
+                    <option value="done">Done</option>
+                    <option class="professional" value="pro">Professional</option>
+                    <option class="personal" value="pers">Personal</option>
+                    <option class="other" value="oth">Other</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="list-box">
+            <h3 id="number-items">No tasks in progress</h2>
+            <div class="list-content container" id="list-content">
+                <ul id="list"></ul>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
